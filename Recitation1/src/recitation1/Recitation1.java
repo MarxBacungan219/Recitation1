@@ -22,12 +22,22 @@ public class Recitation1 extends Application {
     @Override
     public void start(Stage primaryStage) {
         Button btn = new Button();
+        Button btn1 = new Button();
         btn.setText("Say 'Hello World'");
+        btn1.setText("Goodbye Cruel World'");
         btn.setOnAction(new EventHandler<ActionEvent>() {
             
             @Override
             public void handle(ActionEvent event) {
                 System.out.println("Hello World!");
+            }
+        });
+        
+        btn1.setOnAction(new EventHandler<ActionEvent>() {
+            
+            @Override
+            public void handle(ActionEvent event) {
+                System.out.println("Goodbye Cruel World!");
             }
         });
         
