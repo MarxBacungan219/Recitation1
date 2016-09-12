@@ -11,6 +11,8 @@ import javafx.event.EventHandler;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.layout.StackPane;
+import javafx.scene.layout.FlowPane;
+import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
 /**
@@ -41,9 +43,9 @@ public class Recitation1 extends Application {
             }
         });
         
-        StackPane root = new StackPane();
+        VBox root = new VBox();
         root.getChildren().add(btn);
-        
+        root.getChildren().add(btn1);
         Scene scene = new Scene(root, 300, 250);
         
         primaryStage.setTitle("Hello World!");
